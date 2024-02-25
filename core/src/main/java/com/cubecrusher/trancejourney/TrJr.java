@@ -41,7 +41,7 @@ public class TrJr extends Game {
         this.camera = new OrthographicCamera();
         this.camera.setToOrtho(false, scrW, scrH);
         //if (!settings.getChangelogViewed()) {
-		//	setScreen(new PrivacyPolicyScreen(camera)); // Ёбаная хуйня, блядь.
+		//	setScreen(new PrivacyPolicyScreen(camera)); //
 		//} else {
 			setScreen(new EpilepsyScreen(camera));
 		//}

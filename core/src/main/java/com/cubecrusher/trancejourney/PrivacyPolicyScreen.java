@@ -24,6 +24,10 @@ public class PrivacyPolicyScreen extends ScreenAdapter {
     private Skin skin;
     private SpriteBatch batch;
 
+    // Note: This screen will probably be unneeded. It doesn't work as it is anyway, and making it work would mean
+    // me becoming crazy. The code not only of this screen, but of the entire game is too abhorrently shitty to improve it.
+    // If you wish to, you can figure it out your own self. I'm done. I'll be milking this monster, but I'll never groom it.
+
     public PrivacyPolicyScreen(OrthographicCamera camera){
         this.camera = camera;
         this.camera.position.set(new Vector3(TrJr.INSTANCE.getScrW() / 2f, TrJr.INSTANCE.getScrH() / 2f, 0));
@@ -33,7 +37,7 @@ public class PrivacyPolicyScreen extends ScreenAdapter {
 
         if ((Locale.getDefault().getLanguage()).equals("ru")) {
             noticeTitle = "Внимание";
-            noticeDescr = "Продолжая, вы соглашаетесь с Политикой Конфиденциальности, указанной на cubecrusher.ru/trjr-privacy-policy\n\n=== v1.0b ===\n- Добавлено окно Политики Конфиденциальности/Списка изменений\n- Исправлены недочёты\n- Добавлены счётчики FPS (F:) и скорости (V:)\n\n=== v1.2a (10 Сент 2021) ===\n- Первый релиз";
+            noticeDescr = "Продолжая, вы соглашаетесь с Политикой Конфиденциальности, указанной на cubecrusher.ru/trjr-privacy-policy\n\n=== v1.3a ===\n- Добавлено окно Политики Конфиденциальности/Списка изменений\n- Исправлены недочёты\n- Добавлены счётчики FPS (F:) и скорости (V:)\n\n=== v1.2a (10 Сент 2021) ===\n- Первый релиз";
         }
         else {
             noticeTitle = "Warning";

@@ -103,7 +103,7 @@ public class ScoreScreen extends ScreenAdapter {
     }
 
     public void getEasyScores() {
-        String urlString = "leaderboard url";
+        String urlString = "http://dreamlo.com/lb/BN0B0ZjSlk2snBWFvcTOQgwXJdz69dhk2pQRiN4-CquQ/";
         HttpRequestBuilder requestBuilder = new HttpRequestBuilder();
         Net.HttpRequest httpRequest = requestBuilder.newRequest().method(Net.HttpMethods.GET).url(urlString).build();
         httpRequest.setTimeOut(0);
@@ -149,7 +149,7 @@ public class ScoreScreen extends ScreenAdapter {
     }
 
     public void getNormalScores() {
-        String urlString = "leaderboard url";
+        String urlString = "http://dreamlo.com/lb/RgmW1USbOUGLxputvY42UgxmTCP95THkW4TfGUvJItLw/";
         HttpRequestBuilder requestBuilder = new HttpRequestBuilder();
         Net.HttpRequest httpRequest = requestBuilder.newRequest().method(Net.HttpMethods.GET).url(urlString).build();
         httpRequest.setTimeOut(0);
@@ -195,7 +195,7 @@ public class ScoreScreen extends ScreenAdapter {
     }
 
     public void getHardScores() {
-        String urlString = "leaderboard url";
+        String urlString = "http://dreamlo.com/lb/QJNYhELT6kum8gnBlxvuNALo_R2Fa2UUClZd3A5E0N1Q/";
         HttpRequestBuilder requestBuilder = new HttpRequestBuilder();
         Net.HttpRequest httpRequest = requestBuilder.newRequest().method(Net.HttpMethods.GET).url(urlString).build();
         httpRequest.setTimeOut(0);
@@ -241,7 +241,7 @@ public class ScoreScreen extends ScreenAdapter {
     }
 
     public void getCursedScores() {
-        String urlString = "leaderboard url";
+        String urlString = "http://dreamlo.com/lb/5JdylXUUXky8NJN8X6O8iwncyP4oBIQE25bWj-CYrFvQ/";
         HttpRequestBuilder requestBuilder = new HttpRequestBuilder();
         Net.HttpRequest httpRequest = requestBuilder.newRequest().method(Net.HttpMethods.GET).url(urlString).build();
         httpRequest.setTimeOut(0);
