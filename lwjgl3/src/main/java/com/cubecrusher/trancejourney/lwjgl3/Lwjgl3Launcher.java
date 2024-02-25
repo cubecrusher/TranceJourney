@@ -11,7 +11,7 @@ public class Lwjgl3Launcher {
 	}
 
 	private static Lwjgl3Application createApplication() {
-		return new Lwjgl3Application(new TrJr(new ClassInsideAndroidProject(this)), getDefaultConfiguration());
+		return new Lwjgl3Application(new TrJr(), getDefaultConfiguration());
 	}
 
 	private static Lwjgl3ApplicationConfiguration getDefaultConfiguration() {

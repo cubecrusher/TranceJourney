@@ -1,6 +1,6 @@
 buildscript {
-	project.ext.roboVMVersion = "1.12.0"
-	project.ext.roboVMGradleVersion = "1.12.0"
+	//project.ext.roboVMVersion = "1.12.0"
+	//project.ext.roboVMGradleVersion = "1.12.0"
 	repositories {
 		mavenCentral()
 		maven { url 'https://s01.oss.sonatype.org' }
@@ -12,8 +12,8 @@ buildscript {
 	}
 	dependencies {
 		classpath "com.android.tools.build:gradle:$androidPluginVersion"
-		classpath "com.mobidevelop.robovm:robovm-gradle-plugin:$robovmVersion"
-		classpath group: 'org.robovm', name: 'robovm-gradle-plugin', version: "1.12.0"
+		//classpath "com.mobidevelop.robovm:robovm-gradle-plugin:$robovmVersion"
+		//classpath group: 'org.robovm', name: 'robovm-gradle-plugin', version: "1.12.0"
 
 		// This follows advice from https://blog.gradle.org/log4j-vulnerability
 		constraints {
@@ -40,8 +40,8 @@ configure(subprojects - project(':android')) {
 		options.incremental = true
 	}
 	dependencies {
-		implementation group: 'org.robovm', name: 'robovm-rt', version: project.roboVMVersion
-		implementation group: 'org.robovm', name: 'robovm-cocoatouch', version: project.roboVMVersion
+		//implementation group: 'org.robovm', name: 'robovm-rt', version: project.roboVMVersion
+		//implementation group: 'org.robovm', name: 'robovm-cocoatouch', version: project.roboVMVersion
 		// This follows advice from https://blog.gradle.org/log4j-vulnerability
 		constraints {
 			implementation("org.apache.logging.log4j:log4j-core") {
